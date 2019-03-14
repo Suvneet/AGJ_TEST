@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.tester.AuthService_Logout_GETAPITest">
+        <methods>
+          <include name="AuthService_logout_Status"/>
+          <include name="teardown"/>
+          <include name="AuthService_logout_initialization"/>
+          <include name="AgJunction_login_initialization"/>
+        </methods>
+      </class> <!-- com.qa.tester.AuthService_Logout_GETAPITest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
