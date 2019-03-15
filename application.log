@@ -1,125 +1,520 @@
-2019-03-14 18:24:59,819 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
-2019-03-14 18:25:00,124 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
-2019-03-14 18:25:09,335 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2019-03-14 18:25:09,338 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2019-03-14 18:25:09,338 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2019-03-14 18:25:09,339 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2019-03-14 18:25:09,340 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2019-03-14 18:25:09,340 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
-2019-03-14 18:25:09,341 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
-2019-03-14 18:25:09,342 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2019-03-14 18:25:09,343 DEBUG [main] wire:73 -  >> "x-api-key: J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu[\r][\n]"
-2019-03-14 18:25:09,343 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
-2019-03-14 18:25:09,344 DEBUG [main] wire:73 -  >> "Content-Length: 56[\r][\n]"
-2019-03-14 18:25:09,344 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
-2019-03-14 18:25:09,345 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2019-03-14 18:25:09,345 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
-2019-03-14 18:25:09,346 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2019-03-14 18:25:09,347 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2019-03-14 18:25:09,347 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
-2019-03-14 18:25:09,348 DEBUG [main] headers:281 - >> Accept: */*
-2019-03-14 18:25:09,348 DEBUG [main] headers:281 - >> x-api-key: J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu
-2019-03-14 18:25:09,349 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-2019-03-14 18:25:09,349 DEBUG [main] headers:281 - >> Content-Length: 56
-2019-03-14 18:25:09,349 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
-2019-03-14 18:25:09,349 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2019-03-14 18:25:09,349 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
-2019-03-14 18:25:09,350 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2019-03-14 18:25:09,350 DEBUG [main] wire:87 -  >> "email=suvneet-singh%40rsystems.com&password=Qwerty%40123"
-2019-03-14 18:25:10,411 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2019-03-14 18:25:10,417 DEBUG [main] wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
-2019-03-14 18:25:10,418 DEBUG [main] wire:73 -  << "Content-Length: 4271[\r][\n]"
-2019-03-14 18:25:10,419 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2019-03-14 18:25:10,420 DEBUG [main] wire:73 -  << "Date: Thu, 14 Mar 2019 12:55:10 GMT[\r][\n]"
-2019-03-14 18:25:10,421 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 6652814e-4658-11e9-8af5-e17c0833abde[\r][\n]"
-2019-03-14 18:25:10,422 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2019-03-14 18:25:10,423 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WiFPLGA-yK4FpjQ=[\r][\n]"
-2019-03-14 18:25:10,423 DEBUG [main] wire:73 -  << "X-Amzn-Trace-Id: Root=1-5c8a4f2d-def72d12a55c8ea505d13147;Sampled=0[\r][\n]"
-2019-03-14 18:25:10,424 DEBUG [main] wire:73 -  << "X-Cache: Miss from cloudfront[\r][\n]"
-2019-03-14 18:25:10,425 DEBUG [main] wire:73 -  << "Via: 1.1 70b9d57dea4c7c3d88ad0a2bcfcf667e.cloudfront.net (CloudFront)[\r][\n]"
-2019-03-14 18:25:10,426 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: X-E2BUKfzh7D64LmFKBOvi2PQ3CiBubsr51i23B7wzGtjnXrCD7Fxg==[\r][\n]"
-2019-03-14 18:25:10,427 DEBUG [main] wire:73 -  << "[\r][\n]"
-2019-03-14 18:25:10,430 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2019-03-14 18:25:10,430 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2019-03-14 18:25:10,430 DEBUG [main] headers:265 - << Content-Type: application/json;charset=UTF-8
-2019-03-14 18:25:10,431 DEBUG [main] headers:265 - << Content-Length: 4271
-2019-03-14 18:25:10,431 DEBUG [main] headers:265 - << Connection: keep-alive
-2019-03-14 18:25:10,432 DEBUG [main] headers:265 - << Date: Thu, 14 Mar 2019 12:55:10 GMT
-2019-03-14 18:25:10,432 DEBUG [main] headers:265 - << x-amzn-RequestId: 6652814e-4658-11e9-8af5-e17c0833abde
-2019-03-14 18:25:10,432 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2019-03-14 18:25:10,433 DEBUG [main] headers:265 - << x-amz-apigw-id: WiFPLGA-yK4FpjQ=
-2019-03-14 18:25:10,433 DEBUG [main] headers:265 - << X-Amzn-Trace-Id: Root=1-5c8a4f2d-def72d12a55c8ea505d13147;Sampled=0
-2019-03-14 18:25:10,433 DEBUG [main] headers:265 - << X-Cache: Miss from cloudfront
-2019-03-14 18:25:10,434 DEBUG [main] headers:265 - << Via: 1.1 70b9d57dea4c7c3d88ad0a2bcfcf667e.cloudfront.net (CloudFront)
-2019-03-14 18:25:10,434 DEBUG [main] headers:265 - << X-Amz-Cf-Id: X-E2BUKfzh7D64LmFKBOvi2PQ3CiBubsr51i23B7wzGtjnXrCD7Fxg==
-2019-03-14 18:25:10,439 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2019-03-14 18:25:10,471 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json;charset=UTF-8
-2019-03-14 18:25:10,472 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2019-03-14 18:25:10,496 DEBUG [main] wire:87 -  << "{"id_token":"eyJraWQiOiI0UktBR0VPQXBSTitIVDJQZFhxUmtTT2dsMHg2YXlNMnhjRExQMkdza1djPSIsImFsZyI6IlJTMjU2In0.eyJjdXN0b206cmVnaW9uIjoidXMtd2VzdC0yIiwic3ViIjoiYzBmMTAzOTktOWUyNC00YmI4LTljNzktMzRkOWMzZjlhMjI4IiwiY29nbml0bzpncm91cHMiOlsiT0VNX0FHSl9HUk9VUCIsIk9FTV9BRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtd2VzdC0yLmFtYXpvbmF3cy5jb21cL3VzLXdlc3QtMl9qT0d1WW5leGwiLCJjb2duaXRvOnVzZXJuYW1lIjoic3V2bmVldC1zaW5naEByc3lzdGVtcy5jb20iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIxIiwiZ2l2ZW5fbmFtZSI6IlN1dm5lZXQiLCJjb2duaXRvOnJvbGVzIjpbImFybjphd3M6aWFtOjoxNzQyNTc0ODUyNzA6cm9sZVwvT0VNX0FETUlOIiwiYXJuOmF3czppYW06OjE3NDI1NzQ4NTI3MDpyb2xlXC9PRU1fQUdKX0dST1VQIl0sImF1ZCI6IjJicHBpcXBlMXRicGtqcG0xY2ZncnZrY3A1IiwiZXZlbnRfaWQiOiI2NjVlYjY1My00NjU4LTExZTktYWRiZC1mZmIzYzU2ZjgwODkiLCJ0b2tlbl91c2UiOiJpZCIsImN1c3RvbTpyb2xlSWQiOiIxIiwiY3VzdG9tOnBhdXNlZCI6ImZhbHNlIiwiYXV0aF90aW1lIjoxNTUyNTY4MTEwLCJwaG9uZV9udW1iZXIiOiIrOTEyMTIxMjEyMTIxIiwiZXhwIjoxNTUyNTcxNzEwLCJpYXQiOjE1NTI1NjgxMTAsImZhbWlseV9uYW1lIjoic2luZ2giLCJlbWFpbCI6InN1dm5lZXQtc2luZ2hAcnN5c3RlbXMuY29tIn0.ZJnjoJw_mspSSb7VxU2UDRn0HkSLQKHeFF0EaKsMSMXXVbgO3UylXst4CKJKCQV_gt4vGNtisvScUPDpXojRo0xQAsAIzxIWi_-bbXnlyr4xZr4mISESzkBqQxFXDm_WOE6G3rXom7d7GKxQ5sHRycMBLvsdaK7VG-3_uem7TV8sx6WBwZbTcTMqicmsFEsgYjYEzNmti3xbdB7dLQ3ANFhi6ZR9c61suv37rsAGeKFO4nbYHdF6S9MpFfo86LZYT_rr5EI0qTbYc2EUrjQhZRI_jlki-nXbV2LNET7hhDpRna5dfUcNRx1NabgNbp61NjUxY41NJZYURUCW5XdSOw","access_token":"eyJraWQiOiIzT25aWmdmb0NKVUFYWTdIVE5QSCt5VWRkT25zdGtIV3B2MWJNME9hbGs0PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjMGYxMDM5OS05ZTI0LTRiYjgtOWM3OS0zNGQ5YzNmOWEyMjgiLCJjb2duaXRvOmdyb3VwcyI6WyJPRU1fQUdKX0dST1VQIiwiT0VNX0FETUlOIl0sImV2ZW50X2lkIjoiNjY1ZWI2NTMtNDY1OC0xMWU5LWFkYmQtZmZiM2M1NmY4MDg5IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTU1MjU2ODExMCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfak9HdVluZXhsIiwiZXhwIjoxNTUyNTcxNzEwLCJpYXQiOjE1NTI1NjgxMTAsImp0aSI6ImM5MGNjNzFmLTdiNWEtNDQwNi04NjY4LWZhMGYxMjBiOTU1NiIsImNsaWVudF9pZCI6IjJicHBpcXBlMXRicGtqcG0xY2ZncnZrY3A1IiwidXNlcm5hbWUiOiJzdXZuZWV0LXNpbmdoQHJzeXN0ZW1zLmNvbSJ9.V-642-9luxmUy3AOQ-Fo3eDCgVg2pv_6q9SfihBgdHHJ0WMW-4KeWRJlZBxWB5fCaXc6kjG73sc_A1gBLsvfVZEDpUPHwr_uJXuXEWhWPbzJjEO7KqwhNFfH4BAlmjZd-CmVZPOfgTRq0Lt1yGAZ9dMFugW5H0w1uX9KD2gBpSiluoaKbWLCbhBFudYlLJ1NZFZ4KRS__RQI2L-fi_z-LIRinYbdXkA6j1xaBqEpAHuyt4Jb6mjVRRU6oSoPSoUptqFJ3tFUwBA2OV464Un0on8OzVdPFdaRwdgF9-GI31T8uIR-x4qff2gNL5gTSK9ExNHvmav9BfvC3hA-17hxBQ","token_type":"Bearer","refresh_token":"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.OBZjmzEx_A7AHsXi0ogRj-tZ_R-RxxY7Ojx__NP3T7QXOEXWaC3OSY4_BVW7xdAufEk-duF4QRLXbfY58WK5piE7X4aeMF7AFYE7A3UEqMPG994-uphNPxzDpvD7wQFqrodCAYtrfae4RrbifhLrkEgOxo3200LkIt1-9xfhQDrzV7JGpO7JCoK-5JY8HvlfaYOxiT7EEsRP2_Lk95EInvHjYMM_gx9p1ZIZAv8SDj7aRXsEGijJfh_hYvP8WvOgB03rR2xcT4yDQP6QqHJlRk6ZdtNtVH3IpPLy8B102wuMK8Ng5zca-YDSO-MFWRfxR1YisvOz7gtgAvNBg_fztw.vFrAaqxKVAzRZ8GT.2Xsk6DGdcfHx4S-Uncc5ZIgXgZ8nD9mOls3RG_D6Db3KtBDxuBi3i-d9LHXn9vsCCRWquJa54YP9AeRYpGpTV4OsD4wSxAgMKmn7hp-z9aAenAFST4S4EXGkeAAp9fWlhRYETwsfnXP5SACQhVXaBzyNo5UGzN_JWJF_v4QBdMTj0Yly3-Q08S6fgdyI1kxYBzvEkXAaWj3DSPPZ-phctPzx77rx57LhNARK_2DsOcN_PFymR0ywnGdjJmuhMZ2ZBLc3CcfBVOsSe-el31CYtE3-CLC4pyUNybgevGvkZWkn2vMtgXiS_LLOOSpOGVGpzZ6vyfyskG-ujXP2ucBwxhsmaNJQLePGZY_9tJD5_QuWuPWZDdytiXnQinHQjFi_odo3e2OnEwJotJxLfS32fpoFd87x3NuoDuvOpTI8XvuTUTMKj5LN9q7yrk6rtyU8Ojxxh0UZ0ZhU1m-7xUIaRvHiaD6e5uJxp-eOvRtQyzcQ4qjwcg5mVABjai9sC4ojv3AQhRKrBwHjQZSiYb-TrAAuBRkZfIcomf-BMRK7lotKnnuzDHBX9hQDsmeuXuXbaiwx7RdmbhoqgHeC-ZLKbp-PiFoECoGo3Ux1OJt-IoKM8dli2BFkzNs-cJQiPr5OPzMAsolbUaHtj8J4BpU2kELMlD17YRLP443Pu1I_q12mKhscP5JBsK-YQPiggoJY62hZfIIsZGJjkezfYPleVc-s96PLtfSMOuJEJQBGZtIlUAgAG1Jc_Y_0ktHiUURGo2oTHTvaciR5lEnTYLWn3aej1IN0RIXnkf8RPz1eM5NxsgmQe4SMDgTzxzsdeMM9Dgue7rvIyRyxrWAdwLzLffTss8F-2oaMSaG5z5bazjLb5p0M2_pmn-fJx4uOO0wqkSiR3fEcPJRHAeNo3MRfywbci1ZX3ybLDyleKK5uwugQe3KAO6RZ8pVoP37LqC4Pnt1yK6U68fvyvUc0X-8tOSGObgCZkNjanL7qygjBLGAuOnvNznwLj9xJlOQ4eIbhVD3_93YE39f5lChh15c-N0NBXBdGaTIsbC8oIYn_wFiQzMwimpH7Rm1KyQ5PBjbYcWgX8crQpdjCQnwus5b5pHF59SbsMtn1hDPMqbiSfgqGhAJvNXuhm2nDngQcFF9TLiJFT61BrFMH1mIKomePIkWnFLgoyOL3C75pP1ujhdVNVGGq3ls-mnMrRwKxwqzLLoIPUBj0tQzaxWttEezEQDPNDB-ljye-oxK9OjzWYatKkddQZqkT9H_8T5ux3vj87QzM1dnCXaACyv8E44EUFaIdoLFG_tf0wK1DRej2.RMYp9LGxNNWygKDPqYJWqg","expires_in":3600}"
-2019-03-14 18:25:10,497 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4fe89c24
-2019-03-14 18:25:10,497 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2019-03-14 18:25:10,521 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
-2019-03-14 18:25:10,521 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
-2019-03-14 18:25:10,608 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2019-03-14 18:25:10,608 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2019-03-14 18:25:10,608 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2019-03-14 18:25:10,608 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2019-03-14 18:25:10,608 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /dev/auth/logout HTTP/1.1
-2019-03-14 18:25:10,609 DEBUG [main] wire:73 -  >> "GET /dev/auth/logout HTTP/1.1[\r][\n]"
-2019-03-14 18:25:10,609 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
-2019-03-14 18:25:10,609 DEBUG [main] wire:73 -  >> "Authorization: eyJraWQiOiIzT25aWmdmb0NKVUFYWTdIVE5QSCt5VWRkT25zdGtIV3B2MWJNME9hbGs0PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjMGYxMDM5OS05ZTI0LTRiYjgtOWM3OS0zNGQ5YzNmOWEyMjgiLCJjb2duaXRvOmdyb3VwcyI6WyJPRU1fQUdKX0dST1VQIiwiT0VNX0FETUlOIl0sImV2ZW50X2lkIjoiNjY1ZWI2NTMtNDY1OC0xMWU5LWFkYmQtZmZiM2M1NmY4MDg5IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTU1MjU2ODExMCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfak9HdVluZXhsIiwiZXhwIjoxNTUyNTcxNzEwLCJpYXQiOjE1NTI1NjgxMTAsImp0aSI6ImM5MGNjNzFmLTdiNWEtNDQwNi04NjY4LWZhMGYxMjBiOTU1NiIsImNsaWVudF9pZCI6IjJicHBpcXBlMXRicGtqcG0xY2ZncnZrY3A1IiwidXNlcm5hbWUiOiJzdXZuZWV0LXNpbmdoQHJzeXN0ZW1zLmNvbSJ9.V-642-9luxmUy3AOQ-Fo3eDCgVg2pv_6q9SfihBgdHHJ0WMW-4KeWRJlZBxWB5fCaXc6kjG73sc_A1gBLsvfVZEDpUPHwr_uJXuXEWhWPbzJjEO7KqwhNFfH4BAlmjZd-CmVZPOfgTRq0Lt1yGAZ9dMFugW5H0w1uX9KD2gBpSiluoaKbWLCbhBFudYlLJ1NZFZ4KRS__RQI2L-fi_z-LIRinYbdXkA6j1xaBqEpAHuyt4Jb6mjVRRU6oSoPSoUptqFJ3tFUwBA2OV464Un0on8OzVdPFdaRwdgF9-GI31T8uIR-x4qff2gNL5gTSK9ExNHvmav9BfvC3hA-17hxBQ[\r][\n]"
-2019-03-14 18:25:10,609 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "x-api-key: J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
-2019-03-14 18:25:10,610 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2019-03-14 18:25:10,611 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2019-03-14 18:25:10,611 DEBUG [main] headers:278 - >> GET /dev/auth/logout HTTP/1.1
-2019-03-14 18:25:10,611 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-2019-03-14 18:25:10,611 DEBUG [main] headers:281 - >> Authorization: eyJraWQiOiIzT25aWmdmb0NKVUFYWTdIVE5QSCt5VWRkT25zdGtIV3B2MWJNME9hbGs0PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjMGYxMDM5OS05ZTI0LTRiYjgtOWM3OS0zNGQ5YzNmOWEyMjgiLCJjb2duaXRvOmdyb3VwcyI6WyJPRU1fQUdKX0dST1VQIiwiT0VNX0FETUlOIl0sImV2ZW50X2lkIjoiNjY1ZWI2NTMtNDY1OC0xMWU5LWFkYmQtZmZiM2M1NmY4MDg5IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTU1MjU2ODExMCwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfak9HdVluZXhsIiwiZXhwIjoxNTUyNTcxNzEwLCJpYXQiOjE1NTI1NjgxMTAsImp0aSI6ImM5MGNjNzFmLTdiNWEtNDQwNi04NjY4LWZhMGYxMjBiOTU1NiIsImNsaWVudF9pZCI6IjJicHBpcXBlMXRicGtqcG0xY2ZncnZrY3A1IiwidXNlcm5hbWUiOiJzdXZuZWV0LXNpbmdoQHJzeXN0ZW1zLmNvbSJ9.V-642-9luxmUy3AOQ-Fo3eDCgVg2pv_6q9SfihBgdHHJ0WMW-4KeWRJlZBxWB5fCaXc6kjG73sc_A1gBLsvfVZEDpUPHwr_uJXuXEWhWPbzJjEO7KqwhNFfH4BAlmjZd-CmVZPOfgTRq0Lt1yGAZ9dMFugW5H0w1uX9KD2gBpSiluoaKbWLCbhBFudYlLJ1NZFZ4KRS__RQI2L-fi_z-LIRinYbdXkA6j1xaBqEpAHuyt4Jb6mjVRRU6oSoPSoUptqFJ3tFUwBA2OV464Un0on8OzVdPFdaRwdgF9-GI31T8uIR-x4qff2gNL5gTSK9ExNHvmav9BfvC3hA-17hxBQ
-2019-03-14 18:25:10,611 DEBUG [main] headers:281 - >> Accept: */*
-2019-03-14 18:25:10,611 DEBUG [main] headers:281 - >> x-api-key: J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu
-2019-03-14 18:25:10,611 DEBUG [main] headers:281 - >> Content-Length: 0
-2019-03-14 18:25:10,612 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
-2019-03-14 18:25:10,612 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2019-03-14 18:25:10,612 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
-2019-03-14 18:25:10,612 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2019-03-14 18:25:11,466 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2019-03-14 18:25:11,467 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
-2019-03-14 18:25:11,468 DEBUG [main] wire:73 -  << "Content-Length: 0[\r][\n]"
-2019-03-14 18:25:11,468 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2019-03-14 18:25:11,469 DEBUG [main] wire:73 -  << "Date: Thu, 14 Mar 2019 12:55:11 GMT[\r][\n]"
-2019-03-14 18:25:11,470 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 67150dea-4658-11e9-ac26-97dfd692b069[\r][\n]"
-2019-03-14 18:25:11,470 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2019-03-14 18:25:11,471 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WiFPYFDKyK4FY9A=[\r][\n]"
-2019-03-14 18:25:11,472 DEBUG [main] wire:73 -  << "X-Amzn-Trace-Id: Root=1-5c8a4f2f-a1461b4be30f22a2bcc22144;Sampled=0[\r][\n]"
-2019-03-14 18:25:11,473 DEBUG [main] wire:73 -  << "X-Cache: Miss from cloudfront[\r][\n]"
-2019-03-14 18:25:11,474 DEBUG [main] wire:73 -  << "Via: 1.1 09725d0a7888ff36ac991094027698f1.cloudfront.net (CloudFront)[\r][\n]"
-2019-03-14 18:25:11,474 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: jorKDCQOuq50j_boQKNzFE9cBQ2rQT7cCaNNiy2JjDqlt0cP8A_4Fg==[\r][\n]"
-2019-03-14 18:25:11,475 DEBUG [main] wire:73 -  << "[\r][\n]"
-2019-03-14 18:25:11,476 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2019-03-14 18:25:11,477 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2019-03-14 18:25:11,477 DEBUG [main] headers:265 - << Content-Type: application/json
-2019-03-14 18:25:11,478 DEBUG [main] headers:265 - << Content-Length: 0
-2019-03-14 18:25:11,479 DEBUG [main] headers:265 - << Connection: keep-alive
-2019-03-14 18:25:11,479 DEBUG [main] headers:265 - << Date: Thu, 14 Mar 2019 12:55:11 GMT
-2019-03-14 18:25:11,480 DEBUG [main] headers:265 - << x-amzn-RequestId: 67150dea-4658-11e9-ac26-97dfd692b069
-2019-03-14 18:25:11,481 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2019-03-14 18:25:11,481 DEBUG [main] headers:265 - << x-amz-apigw-id: WiFPYFDKyK4FY9A=
-2019-03-14 18:25:11,482 DEBUG [main] headers:265 - << X-Amzn-Trace-Id: Root=1-5c8a4f2f-a1461b4be30f22a2bcc22144;Sampled=0
-2019-03-14 18:25:11,483 DEBUG [main] headers:265 - << X-Cache: Miss from cloudfront
-2019-03-14 18:25:11,483 DEBUG [main] headers:265 - << Via: 1.1 09725d0a7888ff36ac991094027698f1.cloudfront.net (CloudFront)
-2019-03-14 18:25:11,484 DEBUG [main] headers:265 - << X-Amz-Cf-Id: jorKDCQOuq50j_boQKNzFE9cBQ2rQT7cCaNNiy2JjDqlt0cP8A_4Fg==
-2019-03-14 18:25:11,485 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2019-03-14 18:25:11,742 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2019-03-14 18:25:11,743 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2019-03-14 18:25:11,744 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-03-14 18:25:11,744 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-03-14 18:25:11,744 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Suvneet.Singh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2019-03-14 18:25:11,883 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2019-03-14 18:25:11,883 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2019-03-14 18:25:11,884 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-03-14 18:25:11,884 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-03-14 18:25:11,884 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Suvneet.Singh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-15 19:07:35,802 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:36,224 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:36,474 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:36,474 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:36,474 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:36,474 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:36,474 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:36,474 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:36,474 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:36,474 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:36,474 DEBUG [main] wire:73 -  >> "x-api-key: suvneet-singh@rsystems.com[\r][\n]"
+2019-03-15 19:07:36,474 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:36,474 DEBUG [main] wire:73 -  >> "Content-Length: 68[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:36,490 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> x-api-key: suvneet-singh@rsystems.com
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Content-Length: 68
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:36,490 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:36,490 DEBUG [main] wire:87 -  >> "email=Qwerty%40123&password=J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:37 GMT[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 7efb3693-4727-11e9-a8ec-a36c873498ae[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:37,290 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleZLHClSK4FX5w=[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "Via: 1.1 7a9b0a23f7c6fe6c2e662de66ef2e630.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: 5QBBCYrJpK__QWBbl_XYWBCT6KLWUXsiDdPK0xdj8n08b1UJZwMWAg==[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:37,306 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:37,306 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:37 GMT
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << x-amzn-RequestId: 7efb3693-4727-11e9-a8ec-a36c873498ae
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << x-amz-apigw-id: WleZLHClSK4FX5w=
+2019-03-15 19:07:37,306 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:37,322 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:37,322 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:37,322 DEBUG [main] headers:265 - << Via: 1.1 7a9b0a23f7c6fe6c2e662de66ef2e630.cloudfront.net (CloudFront)
+2019-03-15 19:07:37,322 DEBUG [main] headers:265 - << X-Amz-Cf-Id: 5QBBCYrJpK__QWBbl_XYWBCT6KLWUXsiDdPK0xdj8n08b1UJZwMWAg==
+2019-03-15 19:07:37,322 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:37,353 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:37,353 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:37 +0000",[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:37,368 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:37,368 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3956b302
+2019-03-15 19:07:37,368 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:37,386 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:37,386 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:37,464 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:37,464 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:37,464 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:37,464 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:37,464 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:37,480 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "x-api-key: suvneet-singh@rsystems.com[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Content-Length: 32[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:37,480 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:37,485 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:37,486 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:37,486 DEBUG [main] headers:281 - >> x-api-key: suvneet-singh@rsystems.com
+2019-03-15 19:07:37,486 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:37,487 DEBUG [main] headers:281 - >> Content-Length: 32
+2019-03-15 19:07:37,487 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:37,487 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:37,488 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:37,488 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:37,489 DEBUG [main] wire:87 -  >> "email=Qwerty%40123&password=null"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:38 GMT[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 7f8a7e4f-4727-11e9-8fe2-25f2a138ed1e[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleZUGOCSK4FaOw=[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:38,224 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:38,240 DEBUG [main] wire:73 -  << "Via: 1.1 163aad451de143f42c571d7dd3225a48.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:38,240 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: AI8zs_5uaXlvYrB4WX_EhsBSTVe3o_fiKTaTwqtixEONtIV1W9dG7Q==[\r][\n]"
+2019-03-15 19:07:38,240 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:38,240 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:38,240 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:38 GMT
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << x-amzn-RequestId: 7f8a7e4f-4727-11e9-8fe2-25f2a138ed1e
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << x-amz-apigw-id: WleZUGOCSK4FaOw=
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << Via: 1.1 163aad451de143f42c571d7dd3225a48.cloudfront.net (CloudFront)
+2019-03-15 19:07:38,240 DEBUG [main] headers:265 - << X-Amz-Cf-Id: AI8zs_5uaXlvYrB4WX_EhsBSTVe3o_fiKTaTwqtixEONtIV1W9dG7Q==
+2019-03-15 19:07:38,240 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:38,240 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:38,240 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:38 +0000",[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:38,256 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:38,256 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@79b663b3
+2019-03-15 19:07:38,256 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:38,271 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:38,271 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:38,297 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:56995<->13.35.189.62:443 closed
+2019-03-15 19:07:38,375 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:38,375 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:38,375 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:38,375 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:38,391 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:38,391 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "x-api-key: suvneet-singh@rsystems.com[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Content-Length: 56[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:38,391 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> x-api-key: suvneet-singh@rsystems.com
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Content-Length: 56
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:38,391 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:38,391 DEBUG [main] wire:87 -  >> "email=Qwerty%40123&password=J8A47vayFK4zGSqtdd9an2m9OMhm"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:38 GMT[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 8017ca7c-4727-11e9-9a29-4f136ccfc8e4[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleZdEnxyK4FcCg=[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "Via: 1.1 7a9b0a23f7c6fe6c2e662de66ef2e630.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: -zoQI8Lj6riXAyLSWjuRds7n0CgrjB6jBiJ0vljv870AfFff3CwnZQ==[\r][\n]"
+2019-03-15 19:07:39,150 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:39,166 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:39,166 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:38 GMT
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << x-amzn-RequestId: 8017ca7c-4727-11e9-9a29-4f136ccfc8e4
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << x-amz-apigw-id: WleZdEnxyK4FcCg=
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << Via: 1.1 7a9b0a23f7c6fe6c2e662de66ef2e630.cloudfront.net (CloudFront)
+2019-03-15 19:07:39,166 DEBUG [main] headers:265 - << X-Amz-Cf-Id: -zoQI8Lj6riXAyLSWjuRds7n0CgrjB6jBiJ0vljv870AfFff3CwnZQ==
+2019-03-15 19:07:39,166 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:39,166 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:39,166 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:38 +0000",[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:39,166 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:39,166 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@27abb83e
+2019-03-15 19:07:39,166 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:39,199 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:39,199 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:39,277 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:39,293 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:39,293 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:39,293 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:39,293 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:39,293 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "x-api-key: invalid@rsystems.com[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Content-Length: 68[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:39,293 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> x-api-key: invalid@rsystems.com
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Content-Length: 68
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:39,293 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:39,293 DEBUG [main] wire:87 -  >> "email=Qwerty%40123&password=J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:39 GMT[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 80a1e19c-4727-11e9-90c2-b12d62214dcd[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:40,054 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleZmF19SK4FfdQ=[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "Via: 1.1 a6dedc87f3c817cfc438d83771ee62bd.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: JiMS4x7O6QD1XQD-p41Ku5QHqUP3MF9h-9OohBTNMLDToBgqiD302w==[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:40,069 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:40,069 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:39 GMT
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << x-amzn-RequestId: 80a1e19c-4727-11e9-90c2-b12d62214dcd
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << x-amz-apigw-id: WleZmF19SK4FfdQ=
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << Via: 1.1 a6dedc87f3c817cfc438d83771ee62bd.cloudfront.net (CloudFront)
+2019-03-15 19:07:40,069 DEBUG [main] headers:265 - << X-Amz-Cf-Id: JiMS4x7O6QD1XQD-p41Ku5QHqUP3MF9h-9OohBTNMLDToBgqiD302w==
+2019-03-15 19:07:40,069 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:40,069 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:40,085 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:39 +0000",[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:40,085 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:40,085 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4642b71d
+2019-03-15 19:07:40,085 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:40,101 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:40,101 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:43,191 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:43,191 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:43,191 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:43,206 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:43,206 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:43,206 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "x-api-key: null[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Content-Length: 68[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:43,206 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> x-api-key: null
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Content-Length: 68
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:43,206 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:43,206 DEBUG [main] wire:87 -  >> "email=Qwerty%40123&password=J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu"
+2019-03-15 19:07:43,456 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:43,456 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:43 GMT[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 82aa5b5d-4727-11e9-8af5-e17c0833abde[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleaJGqPSK4FpjQ=[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "Via: 1.1 653052adec81df36de33e6bf001efc0c.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: bbFEAlRqg26SXxz2tpn8Qp-88vjuaGjVa6nNlv0_YmjEEg5UdFessA==[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:43,472 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:43,472 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:43 GMT
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << x-amzn-RequestId: 82aa5b5d-4727-11e9-8af5-e17c0833abde
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << x-amz-apigw-id: WleaJGqPSK4FpjQ=
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << Via: 1.1 653052adec81df36de33e6bf001efc0c.cloudfront.net (CloudFront)
+2019-03-15 19:07:43,472 DEBUG [main] headers:265 - << X-Amz-Cf-Id: bbFEAlRqg26SXxz2tpn8Qp-88vjuaGjVa6nNlv0_YmjEEg5UdFessA==
+2019-03-15 19:07:43,487 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:43,487 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:43,487 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:43 +0000",[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:43,487 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:43,487 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@599f571f
+2019-03-15 19:07:43,487 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:43,528 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:43,528 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:46,602 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:46,602 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:46,602 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:46,602 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:46,602 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:46,602 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "x-api-key: suvneet-singh@rsystems.com[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Content-Length: 60[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:46,602 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> x-api-key: suvneet-singh@rsystems.com
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Content-Length: 60
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:46,602 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:46,602 DEBUG [main] wire:87 -  >> "email=null&password=J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu"
+2019-03-15 19:07:47,349 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:47,349 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:47,350 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:47,350 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:47,350 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:47 GMT[\r][\n]"
+2019-03-15 19:07:47,350 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 84f9f0bc-4727-11e9-9d38-1bfe85bc12ee[\r][\n]"
+2019-03-15 19:07:47,351 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:47,351 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:47,352 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:47,352 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleavEYzyK4Fccg=[\r][\n]"
+2019-03-15 19:07:47,352 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:47,352 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:47,353 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:47,353 DEBUG [main] wire:73 -  << "Via: 1.1 0644ef1dec9c563ae1ecd56107eb52a5.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:47,353 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: jI9mYk5grPZc1c1_nNbVIKrk1mQJpyRiMRapUesUbgJ1Lt1jh_X7ow==[\r][\n]"
+2019-03-15 19:07:47,354 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:47,354 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:47,354 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:47,354 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:47,355 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:47,355 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:47,355 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:47 GMT
+2019-03-15 19:07:47,355 DEBUG [main] headers:265 - << x-amzn-RequestId: 84f9f0bc-4727-11e9-9d38-1bfe85bc12ee
+2019-03-15 19:07:47,356 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:47,356 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:47,356 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:47,356 DEBUG [main] headers:265 - << x-amz-apigw-id: WleavEYzyK4Fccg=
+2019-03-15 19:07:47,356 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:47,357 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:47,357 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:47,357 DEBUG [main] headers:265 - << Via: 1.1 0644ef1dec9c563ae1ecd56107eb52a5.cloudfront.net (CloudFront)
+2019-03-15 19:07:47,357 DEBUG [main] headers:265 - << X-Amz-Cf-Id: jI9mYk5grPZc1c1_nNbVIKrk1mQJpyRiMRapUesUbgJ1Lt1jh_X7ow==
+2019-03-15 19:07:47,358 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:47,359 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:47,359 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:47,360 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:47 +0000",[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:47,361 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:47,361 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4bff2185
+2019-03-15 19:07:47,362 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:47,379 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:47,380 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to n8zsjq4a1d.execute-api.us-west-1.amazonaws.com:443
+2019-03-15 19:07:47,448 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-15 19:07:47,448 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-03-15 19:07:47,448 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-15 19:07:47,449 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-15 19:07:47,449 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-15 19:07:47,449 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:47,449 DEBUG [main] wire:73 -  >> "POST /dev/auth/login HTTP/1.1[\r][\n]"
+2019-03-15 19:07:47,449 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-15 19:07:47,449 DEBUG [main] wire:73 -  >> "x-api-key: suvneet-singh@rsystems.com[\r][\n]"
+2019-03-15 19:07:47,449 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "Content-Length: 66[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-03-15 19:07:47,450 DEBUG [main] headers:278 - >> POST /dev/auth/login HTTP/1.1
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Accept: */*
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> x-api-key: suvneet-singh@rsystems.com
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Content-Length: 66
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Host: n8zsjq4a1d.execute-api.us-west-1.amazonaws.com
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+2019-03-15 19:07:47,451 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-15 19:07:47,452 DEBUG [main] wire:87 -  >> "email=Test%40123&password=J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Content-Length: 121[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Date: Fri, 15 Mar 2019 13:37:47 GMT[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "x-amzn-RequestId: 85306a0e-4727-11e9-8af5-e17c0833abde[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "x-amzn-ErrorType: ForbiddenException[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "x-amz-apigw-id: WleazGs9SK4FpjQ=[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST,OPTIONS[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Content-Type,X-Api-Key[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "X-Cache: Error from cloudfront[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "Via: 1.1 653052adec81df36de33e6bf001efc0c.cloudfront.net (CloudFront)[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "X-Amz-Cf-Id: V2NbIyHMCd1ppOYR_MjRkP_Lk8GtV_eNhYbOQwCBUDKapoLSlAAzFQ==[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-03-15 19:07:47,703 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-15 19:07:47,703 DEBUG [main] headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Content-Type: application/json
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Content-Length: 121
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Connection: keep-alive
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Date: Fri, 15 Mar 2019 13:37:47 GMT
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << x-amzn-RequestId: 85306a0e-4727-11e9-8af5-e17c0833abde
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << x-amzn-ErrorType: ForbiddenException
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << x-amz-apigw-id: WleazGs9SK4FpjQ=
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST,OPTIONS
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Content-Type,X-Api-Key
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << X-Cache: Error from cloudfront
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << Via: 1.1 653052adec81df36de33e6bf001efc0c.cloudfront.net (CloudFront)
+2019-03-15 19:07:47,703 DEBUG [main] headers:265 - << X-Amz-Cf-Id: V2NbIyHMCd1ppOYR_MjRkP_Lk8GtV_eNhYbOQwCBUDKapoLSlAAzFQ==
+2019-03-15 19:07:47,703 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-15 19:07:47,703 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2019-03-15 19:07:47,703 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << "{[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << ""timestamp":"15/Mar/2019:13:37:47 +0000",[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << ""status":403,[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << ""error":"API_12",[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << ""message":"Forbidden",[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:73 -  << ""path":"/auth/login"[\n]"
+2019-03-15 19:07:47,703 DEBUG [main] wire:87 -  << "}"
+2019-03-15 19:07:47,703 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5972d253
+2019-03-15 19:07:47,703 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-15 19:07:47,935 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-03-15 19:07:47,935 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-03-15 19:07:47,936 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-15 19:07:47,937 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-15 19:07:47,937 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Suvneet.Singh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-15 19:07:48,078 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:56999<->13.35.189.62:443 closed
+2019-03-15 19:07:48,078 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:57000<->13.35.189.62:443 closed
+2019-03-15 19:07:48,078 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:57002<->13.35.189.62:443 closed
+2019-03-15 19:07:48,078 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:57004<->13.35.189.62:443 closed
+2019-03-15 19:07:48,078 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:57009<->13.35.189.62:443 closed
+2019-03-15 19:07:48,156 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-03-15 19:07:48,156 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-03-15 19:07:48,156 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-15 19:07:48,156 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-15 19:07:48,156 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Suvneet.Singh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

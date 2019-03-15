@@ -8,7 +8,7 @@
 
   <test name="User-management">
     <classes>
-      <class name="com.qa.tester.AuthService_Logout_GETAPITest"/>
+      <class name="com.qa.tester.AuthService_Login_PostAPITest"/>
     </classes>
     
   </test>

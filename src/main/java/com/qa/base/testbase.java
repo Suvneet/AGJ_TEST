@@ -144,6 +144,9 @@ public class testbase {
 				    System.out.println("[Selected Environment] :"+value1);
 				    System.out.println("[Selected User Roles ] :"+value2);	    
 				}
+				else if(option == JOptionPane.CANCEL_OPTION) {
+					System.out.println("Test Execution stopped...");
+				}
 			
 			if(value1.equals("DEV")) {
 			InputStream ip = this.getClass().getClassLoader().getResourceAsStream("config_dev.properties");

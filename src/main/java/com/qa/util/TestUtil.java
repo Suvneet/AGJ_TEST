@@ -18,7 +18,7 @@ public class TestUtil extends testbase{
 	public static JSONObject responsejson;
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\Suvneet.Singh\\eclipse-workspace\\restapitest3\\src\\main\\resources\\API_data.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\Suvneet.Singh\\eclipse-workspace\\Ag_junction\\src\\main\\resources\\Auth_Login_data.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
@@ -42,6 +42,7 @@ public class TestUtil extends testbase{
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(TESTDATA_SHEET_PATH);
+			//System.out.println();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -53,13 +54,15 @@ public class TestUtil extends testbase{
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
+		//System.out.println(sheet.getLastRowNum());
+		//System.out.println(sheet.getRow(0).getLastCellNum());
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 		// System.out.println(sheet.getLastRowNum() + "--------" +
 		// sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				// System.out.println(data[i][k]);
+				//System.out.println(data[i][k]);
 			}
 		}
 		return data;

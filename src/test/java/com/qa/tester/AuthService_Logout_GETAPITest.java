@@ -22,14 +22,13 @@ public class AuthService_Logout_GETAPITest extends AuthService_Login_PostAPITest
 	static String apiURL;
 	AuthService_Login_PostAPITest auth;
 	
-	public AuthService_Logout_GETAPITest() {
+	/*public AuthService_Logout_GETAPITest() {
 		super();
-	}
+	}*/
 	
 	@BeforeClass
 	public void AuthService_logout_initialization() 
 			throws ClientProtocolException, IOException, JSONException, ClassNotFoundException, SQLException {
-		
 		// Fetching URL
 		String baseURL = env_url;
 		// System.out.println(baseURL);
@@ -72,7 +71,7 @@ public class AuthService_Logout_GETAPITest extends AuthService_Login_PostAPITest
 			System.out.println("");
 		} else {
 			System.out.println("==========================================");
-			System.out.println("  RESPONSE TIME OF LOGOUT API IS "+time_taken); 
+			System.out.println("  RESPONSE TIME OF LOGOUT API IS "+time_taken+"ms"); 
 			System.out.println("==========================================");
 			System.out.println("");
 		}
@@ -88,14 +87,17 @@ public class AuthService_Logout_GETAPITest extends AuthService_Login_PostAPITest
 		System.out.println("");
 	}
 
-	//@Test
+	@Test
 	public void AuthService_logout_headers() {
 		Headers header_count = request.getHeaders();
+		System.out.println("==== FETCHING LOGOUT RESPONSE HEADERS ====");
 		System.out.println(header_count);
+		System.out.println("==========================================");
+		System.out.println("");
 	}
 	
-	@AfterClass
-	public void teardown() {
+	@AfterTest
+	public void AuthService_logout_teardown() {
 		System.out.println("==========================================");
 		System.out.println("        OUT OF LOGOUT GET API Class       ");
 		System.out.println("==========================================");

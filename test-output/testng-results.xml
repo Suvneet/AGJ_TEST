@@ -1,45 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="   AGJUNCTION API TESTCASE RESULT SUMMARY" duration-ms="12629" started-at="2019-03-14T12:54:58Z" finished-at="2019-03-14T12:55:11Z">
+  <suite name="   AGJUNCTION API TESTCASE RESULT SUMMARY" duration-ms="13185" started-at="2019-03-15T13:37:34Z" finished-at="2019-03-15T13:37:47Z">
     <groups>
     </groups>
-    <test name="User-management" duration-ms="12629" started-at="2019-03-14T12:54:58Z" finished-at="2019-03-14T12:55:11Z">
-      <class name="com.qa.tester.AuthService_Logout_GETAPITest">
-        <test-method status="PASS" signature="AgJunction_login_initialization()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AgJunction_login_initialization" is-config="true" duration-ms="11596" started-at="2019-03-14T12:54:58Z" finished-at="2019-03-14T12:55:10Z">
+    <test name="User-management" duration-ms="13185" started-at="2019-03-15T13:37:34Z" finished-at="2019-03-15T13:37:47Z">
+      <class name="com.qa.tester.AuthService_Login_PostAPITest">
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="2482" started-at="2019-03-15T13:37:34Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : With valid data ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suvneet-singh@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AgJunction_login_initialization -->
-        <test-method status="PASS" signature="AuthService_logout_initialization()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AuthService_logout_initialization" is-config="true" duration-ms="987" started-at="2019-03-14T12:55:10Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="870" started-at="2019-03-15T13:37:37Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Without x-api-key ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suvneet-singh@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AuthService_logout_initialization -->
-        <test-method status="PASS" signature="AgJunction_login_Status()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AgJunction_login_Status" duration-ms="8" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="926" started-at="2019-03-15T13:37:38Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Invalid x-api-key ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suvneet-singh@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AgJunction_login_Status -->
-        <test-method status="PASS" signature="AgJunction_login_timeTaken()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AgJunction_login_timeTaken" duration-ms="1" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="902" started-at="2019-03-15T13:37:39Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Invalid email_ID ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AgJunction_login_timeTaken -->
-        <test-method status="PASS" signature="AgJunction_loginvalidateResponse()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AgJunction_loginvalidateResponse" duration-ms="1" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="3411" started-at="2019-03-15T13:37:40Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Without email_ID ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AgJunction_loginvalidateResponse -->
-        <test-method status="PASS" signature="AuthService_logout_Status()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AuthService_logout_Status" duration-ms="1" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="3865" started-at="2019-03-15T13:37:43Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Without password ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suvneet-singh@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AuthService_logout_Status -->
-        <test-method status="PASS" signature="AuthService_logout_timeTaken()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="AuthService_logout_timeTaken" duration-ms="1" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
+        </test-method> <!-- AgJunction_login_test -->
+        <test-method status="PASS" signature="AgJunction_login_test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.AuthService_Login_PostAPITest@42d8062c]" name="AgJunction_login_test" duration-ms="339" started-at="2019-03-15T13:37:47Z" data-provider="getExcelData" finished-at="2019-03-15T13:37:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DATA : Invalid password ->]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suvneet-singh@rsystems.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[J8A47vayFK4zGSqtdd9an2m9OMhm0xlx9WoYqHFu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AuthService_logout_timeTaken -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tester.AuthService_Logout_GETAPITest@46daef40]" name="teardown" is-config="true" duration-ms="0" started-at="2019-03-14T12:55:11Z" finished-at="2019-03-14T12:55:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.tester.AuthService_Logout_GETAPITest -->
+        </test-method> <!-- AgJunction_login_test -->
+      </class> <!-- com.qa.tester.AuthService_Login_PostAPITest -->
     </test> <!-- User-management -->
   </suite> <!--    AGJUNCTION API TESTCASE RESULT SUMMARY -->
 </testng-results>
